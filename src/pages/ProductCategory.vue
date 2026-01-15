@@ -174,11 +174,20 @@ const pageSize = 12;
 
 /* AUTO BRAND */
 watchEffect(() => {
-  if (category.value?.brands && !activeBrand.value) {
-    activeBrand.value = category.value.brands[0].slug;
+  if (!category.value) return;
+
+  const brands = category.value.brands;
+  if (!brands || brands.length === 0) return;
+
+  if (!activeBrand.value) {
+    const first = brands[0];
+    if (first) {
+      activeBrand.value = first.slug;
+    }
   }
-  currentPage.value = 1;
 });
+
+
 
 /* ACTIVE PRODUCTS */
 const activeProducts = computed<ProductItem[]>(() => {
