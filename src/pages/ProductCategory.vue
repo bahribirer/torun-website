@@ -46,9 +46,10 @@
 
           <!-- MARKALI ÜRÜNLER -->
           <template v-if="category.brands">
-            <div
+            <RouterLink
               v-for="product in paginatedProducts"
               :key="product.name"
+              :to="`/products/${route.params.slug}/${product.name}`"
               class="product-card"
             >
               <div class="product-image">
@@ -63,14 +64,15 @@
                 <h3>{{ product.name }}</h3>
                 <span class="badge">Ürün Grubu</span>
               </div>
-            </div>
+            </RouterLink>
           </template>
 
           <!-- MARKASIZ ÜRÜNLER -->
           <template v-else-if="category.directProducts">
-            <div
+            <RouterLink
               v-for="product in category.directProducts"
               :key="product.name"
+              :to="`/products/${route.params.slug}/${product.name}`"
               class="product-card"
             >
               <div class="product-image">
@@ -87,7 +89,7 @@
                 <h3>{{ product.name }}</h3>
                 <span class="badge">Ürün</span>
               </div>
-            </div>
+            </RouterLink>
           </template>
 
         </div>
@@ -140,6 +142,7 @@ import { ref, computed, watchEffect } from "vue";
 import { useRoute } from "vue-router";
 import { productCatalog } from "../data/productCatalog";
 import type { CategoryCatalog, ProductItem } from "../data/productCatalog";
+import { productCategories } from "../data/productCategories";
 
 const route = useRoute();
 
@@ -150,10 +153,8 @@ const category = computed<CategoryCatalog | undefined>(() =>
 
 /* TITLE */
 const categoryTitle = computed(() => {
-  if (!category.value) return "";
-  return category.value.categorySlug
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, l => l.toUpperCase());
+  const found = productCategories.find(c => c.slug === route.params.slug);
+  return found ? found.title : "";
 });
 
 /* IMAGE FALLBACK */
@@ -308,6 +309,9 @@ const paginatedProducts = computed<ProductItem[]>(() => {
   box-shadow: 0 24px 50px rgba(0,0,0,0.07);
   overflow: hidden;
   transition: transform .25s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .product-card:hover {

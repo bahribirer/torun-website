@@ -1,40 +1,38 @@
 <template>
   <section class="corporate">
 
-    <!-- HERO -->
+    <!-- HERO SECTION REDESIGNED -->
     <div class="corporate-hero">
-      <div class="hero-overlay">
-        <span class="section-label">Kurumsal</span>
-        <h1>Torunlar Yapı İzolasyon</h1>
-        <p>
-          Yapı ve izolasyon sektöründe güvenilir ürün, güçlü tedarik
-          ve uzun ömürlü çözümler.
-        </p>
+      <div class="hero-container">
+        <div class="hero-card">
+          <div class="hero-image" :style="{ backgroundImage: `url('/assets/kurumsal/header1.jpg')` }"></div>
+          <div class="hero-badge">Kurumsal</div>
+        </div>
       </div>
     </div>
 
     <!-- CONTENT -->
     <div class="corporate-content">
 
-      <!-- ABOUT -->
+      <!-- ABOUT SECTION -->
       <section class="about">
         <div class="about-text">
           <h2>Hakkımızda</h2>
-          <p>
-            Torunlar Yapı İzolasyon Malzemeleri İnşaat Sanayi ve Ticaret Limited
-            Şirketi; su yalıtımı, ısı yalıtımı, çatı kaplamaları, yapı kimyasalları
-            ve inşaat malzemeleri alanlarında faaliyet göstermektedir.
-          </p>
-          <p>
-            Kurulduğumuz günden bu yana hedefimiz; projelere uygun,
-            standartlara tam uyumlu ve uzun ömürlü ürünleri müşterilerimizle
-            buluşturmaktır.
-          </p>
+          <div class="description">
+            <p>
+              Emre Torun tarafından kurulan <strong>Torunlar Yapı İnşaat</strong>, yapı izolasyonu ve yapı malzemeleri alanında <strong>30 yılı aşkın</strong> sektör tecrübesine sahip köklü bir firmadır. Uzun yıllar Karaköy Perşembe Pazarı’nda faaliyet gösteren firmamız, günümüzde hizmetlerini Anadolu Yakası Ümraniye’de sürdürmektedir.
+            </p>
+            <p>
+              Torunlar Yapı; kalite, güvenilirlik ve süreklilik ilkeleri doğrultusunda bireysel ve kurumsal müşterilerine profesyonel çözümler sunmayı hedeflemektedir. Geniş ürün portföyümüz kapsamında; su yalıtım ürünlerinde <strong>BTM, Isonem, Heller ve Vesline</strong>; çatı kaplamaları ve ısı yalıtımında <strong>BTM</strong>; hırdavat grubunda <strong>SGS</strong> markasına ait tüm ürünler ve vida grupları; yapı kimyasallarında <strong>Weber ve Isonem</strong>; ayrıca inşaat malzemeleri ve alçıpan ürün grupları ile hizmet vermekteyiz.
+            </p>
+            <p>
+              Sektördeki gelişmeleri yakından takip eden yaklaşımımız, güçlü tedarikçi ağımız ve müşteri odaklı hizmet anlayışımızla Ümraniye merkezli olarak İstanbul genelinde güvenilir ve sürdürülebilir çözümler sunmaya devam ediyoruz.
+            </p>
+          </div>
         </div>
 
         <div class="about-image">
-          <!-- FOTO EKLENECEK -->
-          <span>Görsel Alanı</span>
+          <img src="/assets/kurumsal/header2.jpeg" alt="Torunlar Yapı Kurumsal" />
         </div>
       </section>
 
@@ -59,56 +57,56 @@
         </div>
       </section>
 
-      <!-- STATS -->
-      <section class="stats">
-        <div class="stat-box">
-          <strong>10+</strong>
-          <span>Yıllık Tecrübe</span>
-        </div>
-        <div class="stat-box">
-          <strong>1000+</strong>
-          <span>Tamamlanan Proje</span>
-        </div>
-        <div class="stat-box">
-          <strong>50+</strong>
-          <span>Ürün Grubu</span>
-        </div>
-        <div class="stat-box">
-          <strong>100%</strong>
-          <span>Müşteri Memnuniyeti</span>
-        </div>
-      </section>
-
-      <!-- VISION / MISSION -->
-      <section class="vision-mission">
-        <div class="vm-box">
-          <h3>Vizyonumuz</h3>
-          <p>
-            Yapı ve izolasyon sektöründe güvenilirliğiyle öne çıkan,
-            tercih edilen bir marka olmak.
-          </p>
+      <!-- ACTIVITY AREAS -->
+      <section class="areas-section">
+        <div class="areas-header">
+          <h2>Faaliyet Alanlarımız</h2>
+          <p>Geniş ürün yelpazemizle inşaat ve izolasyon projelerinizin her aşamasında yanınızdayız.</p>
         </div>
 
-        <div class="vm-box">
-          <h3>Misyonumuz</h3>
-          <p>
-            Kaliteli ürünleri, doğru fiyat ve doğru zamanda projelerle
-            buluşturmak.
-          </p>
-        </div>
-      </section>
-
-      <!-- AREAS -->
-      <section class="areas">
-        <h2>Faaliyet Alanlarımız</h2>
-
-        <div class="areas-grid">
-          <div class="area-card">Su Yalıtımı</div>
-          <div class="area-card">Isı Yalıtımı</div>
-          <div class="area-card">Çatı Kaplamaları</div>
-          <div class="area-card">Yapı Kimyasalları</div>
-          <div class="area-card">Hırdavat & İnşaat</div>
-          <div class="area-card">Endüstriyel Ürünler</div>
+        <div class="areas-list">
+          <div class="area-item">
+            <span class="area-dot"></span>
+            <div class="area-info">
+              <h3>Su Yalıtımı</h3>
+              <p>Temelden çatıya, en zorlu koşullara dayanıklı su yalıtım çözümleri.</p>
+            </div>
+          </div>
+          <div class="area-item">
+            <span class="area-dot"></span>
+            <div class="area-info">
+              <h3>Isı Yalıtımı</h3>
+              <p>Enerji tasarrufu sağlayan, yüksek performanslı mantolama ve yalıtım sistemleri.</p>
+            </div>
+          </div>
+          <div class="area-item">
+            <span class="area-dot"></span>
+            <div class="area-info">
+              <h3>Çatı Kaplamaları</h3>
+              <p>Estetik ve dayanıklı çatı örtüleri, membran ve koruyucu sistemler.</p>
+            </div>
+          </div>
+          <div class="area-item">
+            <span class="area-dot"></span>
+            <div class="area-info">
+              <h3>Yapı Kimyasalları</h3>
+              <p>Seramik yapıştırıcılar, derz dolgular ve özel tamir harçları.</p>
+            </div>
+          </div>
+          <div class="area-item">
+            <span class="area-dot"></span>
+            <div class="area-info">
+              <h3>Hırdavat & İnşaat</h3>
+              <p>SGS kalitesiyle hırdavat, el aletleri ve temel inşaat malzemeleri.</p>
+            </div>
+          </div>
+          <div class="area-item">
+            <span class="area-dot"></span>
+            <div class="area-info">
+              <h3>Endüstriyel Ürünler</h3>
+              <p>Fabrika ve tesisler için özel zemin kaplama ve koruma ürünleri.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -131,80 +129,125 @@
 <style scoped>
 .corporate {
   background: #ffffff;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 
-/* HERO */
+/* HERO REDESIGNED */
 .corporate-hero {
-   height: 460px;              /* biraz daha heybet */
-  margin-bottom: 4rem;
-  background: #eaeaea; /* FOTO EKLENİNCE DEĞİŞTİR */
+  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+  padding: 4rem 1.5rem 2rem;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-card {
   position: relative;
+  height: 400px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.hero-overlay {
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.8s ease;
+}
+
+.hero-card:hover .hero-image {
+  transform: scale(1.05);
+}
+
+.hero-badge {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(0,0,0,0.45), rgba(0,0,0,0.25));
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-}
-
-.section-label {
-  font-size: 0.7rem;
-  letter-spacing: 3px;
+  top: 2rem;
+  left: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 0.6rem 1.5rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-primary);
   text-transform: uppercase;
-  opacity: 0.85;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.hero-overlay h1 {
-  font-size: 3rem;
-  margin: 1rem 0;
-}
-
-.hero-overlay p {
-  max-width: 600px;
-  opacity: 0.9;
-}
-
-/* CONTENT */
+/* CONTENT CONTAINER */
 .corporate-content {
-  max-width: 1100px;
-  margin: -2rem auto 0;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 4rem;
 }
 
-/* ABOUT */
+/* ABOUT SECTION */
 .about {
   background: #ffffff;
   padding: 4rem;
   border-radius: 24px;
-  box-shadow: 0 30px 70px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.05);
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 4rem; /* 👈 artırıldı */
+  gap: 4rem;
+  align-items: center;
 }
 
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--brand-primary);
+  border-radius: 2px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.description p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
 
 .about-image {
-   background: linear-gradient(135deg, #eaeaea, #f4f4f4);
-  height: 340px;
-  border-radius: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
+  width: 100%;
+  height: 480px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
-/* VALUES */
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* VALUES SECTION */
 .values {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -212,88 +255,143 @@
 }
 
 .value-card {
-  background: #ffffff;
-  padding: 2.5rem;
+  background: #fcfcfc;
+  padding: 2.5rem 1.5rem;
   border-radius: 16px;
-  box-shadow: 0 24px 50px rgba(0,0,0,0.07);
+  border: 1px solid #f0f0f0;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
-/* STATS */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  text-align: center;
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-primary);
 }
 
-.stat-box strong {
+.value-card .icon {
   font-size: 2.2rem;
-  color: var(--brand-primary);
+  margin-bottom: 1rem;
+  display: block;
 }
 
-/* VISION MISSION */
-.vision-mission {
+.value-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ACTIVITY AREAS */
+.areas-section {
+  padding: 1rem 0;
+}
+
+.areas-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.areas-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.areas-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
-.vm-box {
-  background: #f6f6f6;
-  padding: 2.5rem;
+.area-item {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
   border-radius: 16px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
-/* AREAS */
-.areas h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+.area-item:hover {
+  background: #ffffff;
+  border-color: #eee;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
 }
 
-.areas-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+.area-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--brand-primary);
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
 }
 
-.area-card {
-  background: #f2f2f2;
-  padding: 3rem;
-  border-radius: 16px;
-  text-align: center;
-  font-weight: 600;
+.area-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
 /* CTA */
 .corporate-cta {
   background: var(--brand-primary);
   color: #ffffff;
-  padding: 4rem;
-  border-radius: 22px;
+  padding: 4rem 2rem;
+  border-radius: 24px;
   text-align: center;
+}
+
+.corporate-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 .cta-btn {
   display: inline-block;
-  margin-top: 1.8rem;
-  padding: 1rem 2.8rem;
+  padding: 1rem 3rem;
   background: #ffffff;
   color: var(--brand-primary);
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.03);
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-  .about,
-  .vision-mission,
-  .values,
-  .stats,
-  .areas-grid {
+@media (max-width: 1000px) {
+  .hero-card {
+    height: 300px;
+  }
+
+  .about {
     grid-template-columns: 1fr;
+    padding: 2.5rem;
+    gap: 2.5rem;
+  }
+  
+  .about-image {
+    height: 350px;
+    order: -1;
   }
 }
 
+@media (max-width: 768px) {
+  .corporate-hero {
+    padding-top: 2rem;
+  }
+  
+  .hero-card {
+    height: 240px;
+  }
+
+  .corporate-content {
+    gap: 3rem;
+  }
+  
+  .values, .areas-list {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

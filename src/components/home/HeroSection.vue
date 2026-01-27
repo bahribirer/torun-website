@@ -133,14 +133,27 @@
 }
 
 .visual-box {
+  position: relative;
   height: 380px;
   border-radius: 8px;
+  overflow: hidden;
+
+  background-image: url('../assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.visual-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
     135deg,
-    var(--brand-primary),
-    var(--brand-accent)
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.05)
   );
 }
+
 
 
 </style>

@@ -12,25 +12,33 @@
       <!-- GRID -->
       <div class="solutions-grid">
         <div class="solution-card">
-          <div class="icon">🔥</div>
+          <div class="image-box">
+             <img src="/assets/isi-yalitimi-home.jpg" alt="Isı Yalıtımı" />
+          </div>
           <h4>Isı Yalıtımı</h4>
           <p>Enerji verimliliği sağlayan sistemler</p>
         </div>
 
         <div class="solution-card">
-          <div class="icon">💧</div>
+          <div class="image-box">
+             <img src="/assets/su-yalitimi-home.jpg" alt="Su Yalıtımı" />
+          </div>
           <h4>Su Yalıtımı</h4>
           <p>Yapıları dış etkenlere karşı korur</p>
         </div>
 
         <div class="solution-card">
-          <div class="icon">🏠</div>
+          <div class="image-box">
+             <img src="/assets/cati-sistemleri-home.jpg" alt="Çatı Sistemleri" />
+          </div>
           <h4>Çatı Sistemleri</h4>
           <p>Modern ve dayanıklı çözümler</p>
         </div>
 
         <div class="solution-card">
-          <div class="icon">🧪</div>
+          <div class="image-box">
+             <img src="/assets/yapi-kimyasallari.jpg" alt="Yapı Kimyasalları" />
+          </div>
           <h4>Yapı Kimyasalları</h4>
           <p>Profesyonel uygulamalar için ürünler</p>
         </div>
@@ -119,10 +127,20 @@
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.08);
 }
 
-/* ICON */
-.icon {
-  font-size: 1.9rem;
+/* IMAGE BOX */
+.image-box {
+  width: 100%;
+  height: 180px;
   margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* TEXT */

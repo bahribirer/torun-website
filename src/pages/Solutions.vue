@@ -17,8 +17,10 @@
       <!-- SOLUTION CARDS -->
       <section class="solution-grid">
 
-        <div class="solution-card">
-          <div class="solution-image placeholder">Görsel Alanı</div>
+        <div class="solution-card" id="su-yalitim">
+          <div class="solution-image">
+            <img src="/assets/solutions/su-yalitim.jpg" alt="Su Yalıtım Çözümleri" />
+          </div>
           <h3>Su Yalıtım Çözümleri</h3>
           <p>
             Temel, teras, ıslak hacim ve çatı uygulamaları için uzun ömürlü
@@ -26,8 +28,10 @@
           </p>
         </div>
 
-        <div class="solution-card">
-          <div class="solution-image placeholder">Görsel Alanı</div>
+        <div class="solution-card" id="isi-yalitim">
+          <div class="solution-image">
+            <img src="/assets/solutions/isi-yalitim.jpg" alt="Isı Yalıtım Sistemleri" />
+          </div>
           <h3>Isı Yalıtım Sistemleri</h3>
           <p>
             Enerji verimliliğini artıran, yapı ömrünü uzatan ısı yalıtım
@@ -35,8 +39,10 @@
           </p>
         </div>
 
-        <div class="solution-card">
-          <div class="solution-image placeholder">Görsel Alanı</div>
+        <div class="solution-card" id="cati-sistemleri">
+          <div class="solution-image">
+            <img src="/assets/solutions/cati-kaplama.jpg" alt="Çatı Kaplama & İzolasyon" />
+          </div>
           <h3>Çatı Kaplama & İzolasyon</h3>
           <p>
             Shingle, çatı kaplamaları ve alt örtü sistemleriyle dayanıklı
@@ -44,8 +50,10 @@
           </p>
         </div>
 
-        <div class="solution-card">
-          <div class="solution-image placeholder">Görsel Alanı</div>
+        <div class="solution-card" id="yapi-kimyasallari">
+          <div class="solution-image">
+            <img src="/assets/yapi-kimyasallari.jpg" alt="Yapı Kimyasalları" />
+          </div>
           <h3>Yapı Kimyasalları</h3>
           <p>
             Profesyonel uygulamalar için tamir harçları, yapıştırıcılar
@@ -54,7 +62,9 @@
         </div>
 
         <div class="solution-card">
-          <div class="solution-image placeholder">Görsel Alanı</div>
+          <div class="solution-image">
+            <img src="/assets/solutions/hirdavat.jpg" alt="Şantiye & Hırdavat Çözümleri" />
+          </div>
           <h3>Şantiye & Hırdavat Çözümleri</h3>
           <p>
             Şantiye süreçlerinde ihtiyaç duyulan ekipman, hırdavat
@@ -63,11 +73,13 @@
         </div>
 
         <div class="solution-card">
-          <div class="solution-image placeholder">Görsel Alanı</div>
-          <h3>Proje Bazlı Ürün Danışmanlığı</h3>
+          <div class="solution-image">
+            <img src="/assets/solutions/insaat-malzemeleri.avif" alt="İnşaat Ürünleri" />
+          </div>
+          <h3>İnşaat Ürünleri</h3>
           <p>
-            Uygulama alanına ve ihtiyaca göre doğru ürün seçimi için
-            uzman desteği sağlıyoruz.
+            İnşaat sahalarında kullanılan temel inşaat malzemelerine ve ekipmanlarına 
+            hızlı ve güvenilir şekilde tek noktadan ulaşın.
           </p>
         </div>
 
@@ -129,6 +141,7 @@
     </div>
   </section>
 </template>
+
 <style scoped>
 .solutions {
   background: #ffffff;
@@ -182,20 +195,25 @@
   padding: 2.5rem;
   border-radius: 20px;
   box-shadow: 0 24px 50px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-8px);
 }
 
 .solution-image {
-  height: 180px;
+  height: 200px;
   border-radius: 14px;
   margin-bottom: 1.6rem;
+  overflow: hidden;
+  background: #f0f0f0;
 }
 
-.placeholder {
-  background: linear-gradient(135deg, #e6e6e6, #f2f2f2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
+.solution-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* PROCESS */
@@ -265,4 +283,3 @@
   }
 }
 </style>
-

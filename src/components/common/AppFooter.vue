@@ -32,10 +32,10 @@
       <div class="footer-col">
         <h4>Faaliyet Alanları</h4>
         <ul>
-          <li>Isı Yalıtımı</li>
-          <li>Su Yalıtımı</li>
-          <li>Çatı Sistemleri</li>
-          <li>Yapı Kimyasalları</li>
+          <li><RouterLink to="/solutions#isi-yalitim">Isı Yalıtımı</RouterLink></li>
+          <li><RouterLink to="/solutions#su-yalitim">Su Yalıtımı</RouterLink></li>
+          <li><RouterLink to="/solutions#cati-sistemleri">Çatı Sistemleri</RouterLink></li>
+          <li><RouterLink to="/solutions#yapi-kimyasallari">Yapı Kimyasalları</RouterLink></li>
         </ul>
       </div>
 

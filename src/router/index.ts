@@ -11,22 +11,36 @@ const routes = [
   { path: "/contact", name: "contact", component: Contact },
   { path: "/solutions", name: "solutions", component: Solutions },
   // router/index.ts (ilgili routes array'in içine ekle)
-{
-  path: "/products",
-  name: "products",
-  component: () => import("../pages/Products.vue"),
-},
-{
-  path: "/products/:slug",
-  name: "product-category",
-  component: () => import("../pages/ProductCategory.vue"),
-},
-
+  {
+    path: "/products",
+    name: "products",
+    component: () => import("../pages/Products.vue"),
+  },
+  {
+    path: "/products/:slug",
+    name: "product-category",
+    component: () => import("../pages/ProductCategory.vue"),
+  },
+  {
+    path: "/products/:categorySlug/:productName",
+    name: "product-detail",
+    component: () => import("../pages/ProductDetail.vue"),
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 100,
+        behavior: "smooth",
+      };
+    }
+    return savedPosition || { top: 0 };
+  },
 });
 
 export default router;

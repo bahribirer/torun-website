@@ -12,19 +12,25 @@
       <!-- CARDS -->
       <div class="trust-grid">
         <div class="trust-card">
-          <div class="icon-box">🧱</div>
+          <div class="image-box">
+            <img src="/assets/kaliteli-malzeme.jpg" alt="Kaliteli Malzeme" />
+          </div>
           <h3>Kaliteli Malzeme</h3>
           <p>Standartlara uygun, uzun ömürlü ürünler</p>
         </div>
 
         <div class="trust-card">
-          <div class="icon-box">👷‍♂️</div>
+          <div class="image-box">
+             <img src="/assets/uzman-kadro.jpg" alt="Uzman Kadro" />
+          </div>
           <h3>Uzman Kadro</h3>
           <p>Deneyimli ve profesyonel ekip</p>
         </div>
 
         <div class="trust-card">
-          <div class="icon-box">⏱️</div>
+          <div class="image-box">
+             <img src="/assets/zamaninda-teslim.jpg" alt="Zamanında Teslim" />
+          </div>
           <h3>Zamanında Teslim</h3>
           <p>Planlı ve güvenilir iş süreçleri</p>
         </div>
@@ -99,18 +105,20 @@
   box-shadow: 0 25px 50px rgba(0,0,0,0.08);
 }
 
-/* ICON */
-.icon-box {
-  width: 64px;
-  height: 64px;
+/* IMAGE BOX */
+.image-box {
+  width: 100%;
+  height: 200px; /* Sabit bir yükseklik belirleyelim */
   margin: 0 auto 1.5rem;
-  background: rgba(198, 40, 40, 0.1);
-  color: var(--brand-primary);
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* TEXT */
