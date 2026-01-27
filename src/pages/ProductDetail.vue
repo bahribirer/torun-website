@@ -99,9 +99,9 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import { computed } from "vue";
+import { computed, watchEffect } from "vue";
 import { useRoute } from "vue-router";
+import { useHead } from "@unhead/vue";
 import { productCatalog } from "../data/productCatalog";
 import { productCategories } from "../data/productCategories";
 
@@ -124,6 +124,43 @@ const product = computed(() => {
     return category.directProducts.find(item => item.name === productName) || null;
   }
   return null;
+});
+
+// SEO & Meta Tags
+useHead({
+  title: computed(() => product.value ? `${product.value.name} - Torunlar Yapı İzolasyon` : 'Ürün Bulunamadı'),
+  meta: [
+    {
+      name: "description",
+      content: computed(() => product.value?.description || 'Torunlar Yapı güvencesiyle sunulan kaliteli inşaat ve yalıtım malzemesi.')
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: computed(() => `https://www.xn--trnyap-kya.com/products/${categorySlug}/${encodeURIComponent(productName)}`)
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: computed(() => {
+        if (!product.value) return '';
+        const schema = {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": product.value.name,
+          "image": window.location.origin + (product.value.image || '/assets/placeholder.png'),
+          "description": product.value.description || 'İnşaat ve yalıtım malzemesi',
+          "brand": {
+            "@type": "Brand",
+            "name": "Torunlar Yapı"
+          }
+        };
+        return JSON.stringify(schema);
+      })
+    }
+  ]
 });
 
 const categoryTitle = computed(() => {

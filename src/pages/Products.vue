@@ -42,7 +42,18 @@
 </template>
 
 <script setup lang="ts">
+import { useHead } from "@unhead/vue";
 import { productCategories } from "../data/productCategories";
+
+useHead({
+  title: "Ürün Gruplarımız - Torunlar Yapı İzolasyon",
+  meta: [
+    {
+      name: "description",
+      content: "Su yalıtımı, ısı yalıtımı, hırdavat ve inşaat malzemeleri kategorilerimizdeki geniş ürün yelpazesini inceleyin. BTM, Isonem ve SGS markalı profesyonel çözümler."
+    }
+  ]
+});
 </script>
 
 <style scoped>

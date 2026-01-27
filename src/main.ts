@@ -10,8 +10,12 @@ import "./styles/theme.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 
+import { createHead } from "@unhead/vue";
+
+const head = createHead();
 const app = createApp(App);
 
+app.use(head);
 app.use(router);
 app.use(PrimeVue, {
   theme: {
