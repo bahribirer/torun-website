@@ -10,7 +10,7 @@ import "./styles/theme.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 
-import { createHead } from "@unhead/vue";
+import { createHead } from "@unhead/vue/client";
 
 const head = createHead();
 const app = createApp(App);

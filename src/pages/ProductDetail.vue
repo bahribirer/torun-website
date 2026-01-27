@@ -99,7 +99,8 @@
   </section>
 </template>
 
-import { computed, watchEffect } from "vue";
+<script setup lang="ts">
+import { computed } from "vue";
 import { useRoute } from "vue-router";
 import { useHead } from "@unhead/vue";
 import { productCatalog } from "../data/productCatalog";
@@ -144,7 +145,7 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
-      children: computed(() => {
+      innerHTML: computed(() => {
         if (!product.value) return '';
         const schema = {
           "@context": "https://schema.org/",
