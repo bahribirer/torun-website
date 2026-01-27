@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.xn--trnyap-kya.com/sitemap.xml
+Sitemap: https://www.xn--trnyap-u9a.com/sitemap.xml

@@ -29,7 +29,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.xn--trnyap-kya.com/'
+      href: 'https://www.xn--trnyap-u9a.com/'
     }
   ]
 });

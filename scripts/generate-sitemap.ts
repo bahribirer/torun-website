@@ -3,7 +3,7 @@ import path from "path";
 import { productCatalog } from "../src/data/productCatalog.js";
 import { sgsProducts } from "../src/data/sgsProducts.js";
 
-const BASE_URL = "https://www.xn--trnyap-kya.com";
+const BASE_URL = "https://www.xn--trnyap-u9a.com";
 const OUTPUT_PATH = "./public/sitemap.xml";
 
 async function generateSitemap() {

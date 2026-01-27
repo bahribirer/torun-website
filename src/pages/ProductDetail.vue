@@ -139,7 +139,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: computed(() => `https://www.xn--trnyap-kya.com/products/${categorySlug}/${encodeURIComponent(productName)}`)
+      href: computed(() => `https://www.xn--trnyap-u9a.com/products/${categorySlug}/${encodeURIComponent(productName)}`)
     }
   ],
   script: [
