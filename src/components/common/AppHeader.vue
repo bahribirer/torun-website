@@ -30,7 +30,6 @@
       <Transition name="fade">
         <div v-if="isMenuOpen" class="mobile-menu-overlay" @click.self="isMenuOpen = false">
           <div class="mobile-menu-panel">
-            <button class="close-btn" @click="isMenuOpen = false">&times;</button>
             <nav class="mobile-nav">
               <RouterLink
                 v-for="item in menu"
@@ -194,15 +193,7 @@ const menu = [
   transition: transform 0.3s ease;
 }
 
-.close-btn {
-  align-self: flex-end;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  margin-bottom: 2rem;
-  line-height: 1;
-}
+
 
 .mobile-nav {
   display: flex;
