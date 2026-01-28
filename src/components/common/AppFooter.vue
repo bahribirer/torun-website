@@ -54,7 +54,7 @@
   </li>
   <li>
     <i class="pi pi-mobile icon"></i>
-    <span>0532 495 17 56</span>
+    <span>0532 495 17 16</span>
   </li>
   <li>
     <i class="pi pi-envelope icon"></i>

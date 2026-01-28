@@ -95,9 +95,9 @@ const menu = [
 }
 
 .logo img {
-  height: 80px;
+  height: 110px;
   width: auto;
-  max-width: 200px;
+  max-width: 280px;
   object-fit: contain;
 }
 
@@ -240,7 +240,7 @@ const menu = [
   }
   
   .logo img {
-    height: 60px;
+    height: 80px;
   }
   
   .header-inner {
